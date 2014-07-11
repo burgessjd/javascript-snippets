@@ -1,0 +1,13 @@
+/* sitewide Bootstrap jQuery initializations and settings */
+
+
+$(function () { 
+      $('.nav-tabs a:first').tab('show'); // activates first tab
+
+      $('ul.nav li.dropdown').hover(function() {
+      	$('.dropdown-menu', this).fadeIn();
+      }, function () {
+      	$('.dropdown-menu', this).fadeOut('fast');      		
+      }); // adds hover function to drop down links
+
+    });
