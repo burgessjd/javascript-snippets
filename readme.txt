@@ -1,3 +1,3 @@
-JavaScripts
+JavaScripts/jQuery
 
 Code snippets library.
