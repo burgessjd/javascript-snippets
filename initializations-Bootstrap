@@ -1,4 +1,4 @@
-/* sitewide Bootstrap jQuery initializations and settings */
+// sitewide Bootstrap jQuery initializations and settings
 
 
 $(function () { 
