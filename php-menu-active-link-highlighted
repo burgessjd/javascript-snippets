@@ -1,0 +1,28 @@
+// jQuery library required
+
+
+
+
+<script type="text/javascript">
+
+$(document).ready(function(){
+    $('.php-menu a').each(function(index) {
+        if(this.href.trim() == window.location)
+            $(this).addClass("active");
+    });
+});
+
+
+</script>
+
+
+// begin HTML 
+// ALL links to the page's default PHP include file must NOT include the page ID or the active class style won't work for that include. 
+// (Allow the page's PHP script to use its default function to always load that include.)
+
+<ul class="php-menu">
+<li><a href="index.php">Home</a></li>
+<li><a href="index.php?pg=one">Include One</a></li>
+<li><a href="index.php?pg=two">Include Two</a></li>
+<li><a href="index.php?pg=three" class="last">Include Three</a></li>
+</ul>
